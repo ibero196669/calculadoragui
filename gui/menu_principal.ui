@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App Ejercicios</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* QMainWindow */
+QMainWindow {
+    background-color: #F9FAFB;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+    color: #2C3E50;
+}
+
+/* QMenuBar */
+QMenuBar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E3E7ED;
+    padding: 4px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 6px;
+    color: #2C3E50;
+}
+
+QMenuBar::item:selected {
+    background-color: #EEF2F7;
+}
+
+QMenuBar::item:pressed {
+    background-color: #E3E9F0;
+}
+
+/* QMenu */
+QMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #DDE3EA;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: #2C3E50;
+}
+
+QMenu::item:selected {
+    background-color: #3A7CA5;
+    color: #FFFFFF;
+}
+
+QMenu::item:disabled {
+    color: #A0A7B4;
+}
+
+/* Separador dentro del menú */
+QMenu::separator {
+    height: 1px;
+    background: #E3E7ED;
+    margin: 4px 8px;
+}
+
+/* QAction (afecta elementos del menú) */
+QAction {
+    padding: 6px 20px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionCalculadora"/>
+    <addaction name="actionGalones_a_Litros"/>
+    <addaction name="actionPozo"/>
+    <addaction name="actionCelsius_a_F"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCalculadora">
+   <property name="text">
+    <string>Calculadora</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionGalones_a_Litros">
+   <property name="text">
+    <string>Galones a Litros</string>
+   </property>
+  </action>
+  <action name="actionPozo">
+   <property name="text">
+    <string>Pozo</string>
+   </property>
+  </action>
+  <action name="actionCelsius_a_F">
+   <property name="text">
+    <string>Celsius a F</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
